@@ -10,12 +10,7 @@ export default function Home() {
           <div className="font-bold text-xl text-blue-900 tracking-tight">
             部活DX <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded ml-2 align-middle">Beta</span>
           </div>
-          <a
-            href="#contact"
-            className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors"
-          >
-            お問い合わせ
-          </a>
+          {/* Simple Header - No distractions */}
         </div>
       </header>
 
@@ -32,17 +27,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+              href="https://line.me/R/ti/p/@placeholder"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#06C755] rounded-lg shadow-lg hover:bg-[#05b34c] hover:shadow-xl transition-all transform hover:-translate-y-0.5"
             >
-              無料相談を申し込む
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </a>
-            <a
-              href="#reason"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-600 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-all"
-            >
-              選ばれる理由を見る
+              LINEで無料相談する
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
             </a>
           </div>
         </div>
@@ -181,10 +172,12 @@ export default function Home() {
               アルバイトを雇うよりも圧倒的に低コストで、専属のWeb担当者を持てます。
             </p>
             <a
-              href="#contact"
-              className="block w-full py-4 text-center font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition"
+              href="https://line.me/R/ti/p/@placeholder"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-4 text-center font-bold text-white bg-[#06C755] rounded-xl hover:bg-[#05b34c] transition"
             >
-              まずは無料で相談する
+              まずはLINEで相談する
             </a>
             <p className="text-center text-xs text-slate-400 mt-4">初期費用はご相談ください</p>
           </div>
@@ -202,12 +195,15 @@ export default function Home() {
             「どんなことができるの？」といった軽いご質問でも大歓迎です。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold rounded-lg text-lg flex items-center justify-center transition">
+            <a
+              href="https://line.me/R/ti/p/@placeholder"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold rounded-lg text-lg flex items-center justify-center transition w-full sm:w-auto"
+            >
+              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.87 1.57 5.43 4.09 7.04-.18.82-1.03 2.87-1.15 3.16-.06.14.07.29.2.22 3.13-1.63 4.14-2.19 4.39-2.34.8.21 1.64.33 2.47.33 5.52 0 10-3.92 10-8.75S17.52 2 12 2z" /></svg>
               LINEで気軽に相談する
-            </button>
-            <button className="px-8 py-4 bg-white hover:bg-gray-100 text-slate-900 font-bold rounded-lg text-lg transition">
-              お問い合わせフォームへ
-            </button>
+            </a>
           </div>
         </div>
       </section>
