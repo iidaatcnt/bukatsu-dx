@@ -194,6 +194,18 @@ export default function Home() {
             まずは現状のお悩みをお聞かせください。無理な売り込みは一切いたしません。<br />
             「どんなことができるの？」といった軽いご質問でも大歓迎です。
           </p>
+
+          <div className="flex flex-col items-center justify-center mb-8">
+            <div className="bg-white p-2 rounded-lg shadow-lg mb-4">
+              <img
+                src="https://qr-official.line.me/gs/M_095jzxmf_GW.png?oat_content=qr"
+                alt="LINE Official Account QR Code"
+                className="w-32 h-32 md:w-40 md:h-40"
+              />
+            </div>
+            <p className="text-slate-400 text-sm mb-4">QRコード読み取りはこちら</p>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://lin.ee/rCg1MJn"
