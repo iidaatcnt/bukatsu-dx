@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://line.me/R/ti/p/@placeholder"
+              href="https://lin.ee/rCg1MJn"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#06C755] rounded-lg shadow-lg hover:bg-[#05b34c] hover:shadow-xl transition-all transform hover:-translate-y-0.5"
@@ -172,7 +172,7 @@ export default function Home() {
               アルバイトを雇うよりも圧倒的に低コストで、専属のWeb担当者を持てます。
             </p>
             <a
-              href="https://line.me/R/ti/p/@placeholder"
+              href="https://lin.ee/rCg1MJn"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 text-center font-bold text-white bg-[#06C755] rounded-xl hover:bg-[#05b34c] transition"
@@ -196,7 +196,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://line.me/R/ti/p/@placeholder"
+              href="https://lin.ee/rCg1MJn"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold rounded-lg text-lg flex items-center justify-center transition w-full sm:w-auto"
