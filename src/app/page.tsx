@@ -126,18 +126,42 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-indigo-300 font-bold tracking-widest uppercase mb-2">SERVICE MENU</h2>
-            <h3 className="text-3xl lg:text-4xl font-bold">私たちが「あなたの手」になります。</h3>
-            <p className="mt-4 text-indigo-200">専門的なスキルは不要。チャットで指示を飛ばすだけ。</p>
+            <h3 className="text-3xl lg:text-4xl font-bold">「面倒なこと」は、すべて私たちが引き受けます。</h3>
+            <p className="mt-4 text-indigo-200">あなたが「やりたいこと」だけを教えてください。</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "HP修正・更新", icon: "🛠️", desc: "「来月の予定を載せて」「写真を差し替えて」。スマホで指示するだけで、私たちが即座に更新します。" },
-              { title: "SNS運用代行", icon: "✨", desc: "活動の様子を写真で送ってください。魅力的な文章とハッシュタグを添えて、InstagramやFacebookに投稿します。" },
-              { title: "チラシ・ポスター作成", icon: "🎨", desc: "手書きのラフ案を写メで送るだけ。プロのデザインで見やすい募集チラシを作成し、データでお渡しします。" },
-              { title: "Square・決済導入", icon: "💳", desc: "「集金をカード払いにしたいけど設定が...」。面倒なアカウント開設から商品登録まで、全部代行します。" },
-              { title: "LINE公式アカウント", icon: "💬", desc: "保護者連絡用のLINE開設、リッチメニューの設定、一斉配信の代行まで。連絡網のストレスをゼロに。" },
-              { title: "Googleフォーム作成", icon: "📝", desc: "入会申込書やアンケートをデジタル化。自動集計されるので、もう紙の束をめくる必要はありません。" },
+              {
+                title: "月謝袋の廃止・未払いゼロへ",
+                icon: "💳",
+                desc: "「月謝まだですか？」という気まずい催促はもう不要。自動引き落とし導入で、集金の手間も精神的ストレスもゼロにします。"
+              },
+              {
+                title: "電話連絡網・欠席連絡からの解放",
+                icon: "💬",
+                desc: "朝の欠席連絡電話、もう出なくてOK。LINEで24時間自動受付。体験会の予約も、顧客名簿の管理も、スマホひとつで完結します。"
+              },
+              {
+                title: "チーム公式グッズ販売",
+                icon: "👕",
+                desc: "「お揃いのTシャツ作りたいけど在庫が怖い...」。SUZURIなどを使って、在庫リスクゼロで公式グッズのネット販売を開始します。"
+              },
+              {
+                title: "TikTok / YouTube動画作成",
+                icon: "🎥",
+                desc: "練習風景の動画を送るだけ。流行りの音楽に乗せて、生徒が集まる「カッコいいショート動画」を作成・投稿代行します。"
+              },
+              {
+                title: "チラシ・ポスター作成",
+                icon: "🎨",
+                desc: "手書きのラフ案を写メで送るだけ。プロのデザインで見やすく、生徒が集まる募集チラシを作成し、データでお渡しします。"
+              },
+              {
+                title: "HP修正・更新代行",
+                icon: "🛠️",
+                desc: "「来月の予定を載せて」「試合結果をアップして」。スマホで一行送るだけで、私たちが即座にホームページを更新します。"
+              },
             ].map((item, i) => (
               <div key={i} className="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl hover:bg-white/20 transition">
                 <div className="text-3xl mb-4">{item.icon}</div>
@@ -171,23 +195,23 @@ export default function Home() {
             </div>
 
             <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left max-w-sm mx-auto">
-              <p className="font-bold text-slate-900 mb-4 text-center">こんなことが頼めます</p>
+              <p className="font-bold text-slate-900 mb-4 text-center">ご依頼サンプル</p>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center text-slate-700">
                   <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>ホームページのテキスト・画像修正</span>
+                  <span>HPのテキスト・画像修正</span>
                 </li>
                 <li className="flex items-center text-slate-700">
                   <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>SNS投稿代行（1回分）</span>
+                  <span>ショート動画 編集・投稿（1本）</span>
                 </li>
                 <li className="flex items-center text-slate-700">
                   <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>保護者メールの一斉配信設定</span>
+                  <span>保護者一斉メール配信代行</span>
                 </li>
                 <li className="flex items-center text-slate-700">
                   <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>名簿データ入力（10名まで）</span>
+                  <span>オリジナルグッズ画像作成</span>
                 </li>
               </ul>
             </div>
