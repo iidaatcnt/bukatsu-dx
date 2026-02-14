@@ -96,7 +96,7 @@ export default function Home() {
             <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
               <div className="text-5xl mb-4">💻💦</div>
               <h3 className="text-xl font-bold text-slate-800 mb-3">PCが置物化している</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 text-base leading-relaxed">
                 助成金でパソコンを買ったけど、使い方がわからず箱に入ったまま。
                 結局、手書きの書類と電話連絡に戻ってしまっている。
               </p>
@@ -104,7 +104,7 @@ export default function Home() {
             <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
               <div className="text-5xl mb-4">😓</div>
               <h3 className="text-xl font-bold text-slate-800 mb-3">スタッフもIT苦手</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 text-base leading-relaxed">
                 パートさんや保護者ボランティアにお願いしたいけど、
                 みんなパソコンが苦手で、結局代表の自分が全部やるハメに...。
               </p>
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
               <div className="text-5xl mb-4">⏳</div>
               <h3 className="text-xl font-bold text-slate-800 mb-3">指導時間が削られる</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 text-base leading-relaxed">
                 名簿整理やメール返信に追われて、肝心の指導メニューを考える時間がない。
                 「何のためにクラブを作ったんだっけ...」と悩む日々。
               </p>
@@ -123,14 +123,14 @@ export default function Home() {
 
       {/* Service Menu */}
       <section className="py-20 bg-indigo-900 text-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-indigo-300 font-bold tracking-widest uppercase mb-2">SERVICE MENU</h2>
             <h3 className="text-3xl lg:text-4xl font-bold">「面倒なこと」は、すべて私たちが引き受けます。</h3>
-            <p className="mt-4 text-indigo-200">あなたが「やりたいこと」だけを教えてください。</p>
+            <p className="mt-4 text-indigo-200 text-lg">あなたが「やりたいこと」だけを教えてください。</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               {
                 title: "月謝袋の廃止・未払いゼロへ",
@@ -138,19 +138,19 @@ export default function Home() {
                 desc: "「月謝まだですか？」という気まずい催促はもう不要。自動引き落とし導入で、集金の手間も精神的ストレスもゼロにします。"
               },
               {
-                title: "電話連絡網・欠席連絡からの解放",
+                title: "電話連絡・欠席連絡からの解放",
                 icon: "💬",
-                desc: "朝の欠席連絡電話、もう出なくてOK。LINEで24時間自動受付。体験会の予約も、顧客名簿の管理も、スマホひとつで完結します。"
-              },
-              {
-                title: "チーム公式グッズ販売",
-                icon: "👕",
-                desc: "「お揃いのTシャツ作りたいけど在庫が怖い...」。SUZURIなどを使って、在庫リスクゼロで公式グッズのネット販売を開始します。"
+                desc: "朝の欠席連絡電話、もう出なくてOK。LINEで24時間自動受付。体験会の予約も顧客名簿も、スマホひとつで完結します。"
               },
               {
                 title: "TikTok / YouTube動画作成",
                 icon: "🎥",
                 desc: "練習風景の動画を送るだけ。流行りの音楽に乗せて、生徒が集まる「カッコいいショート動画」を作成・投稿代行します。"
+              },
+              {
+                title: "チーム公式グッズ販売",
+                icon: "👕",
+                desc: "「お揃いのチームTシャツを作りたい」。SUZURIなどを使って、在庫リスクゼロで公式グッズのネット販売を開始します。"
               },
               {
                 title: "チラシ・ポスター作成",
@@ -163,10 +163,10 @@ export default function Home() {
                 desc: "「来月の予定を載せて」「試合結果をアップして」。スマホで一行送るだけで、私たちが即座にホームページを更新します。"
               },
             ].map((item, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl hover:bg-white/20 transition">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                <p className="text-sm text-indigo-100 leading-relaxed opacity-90">{item.desc}</p>
+              <div key={i} className="bg-white/10 backdrop-blur border border-white/20 p-8 rounded-2xl hover:bg-white/20 transition flex flex-col justify-center">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">{item.title}</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -174,59 +174,84 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">パートさんを雇うより、<br className="sm:hidden" />圧倒的にお得です。</h2>
-          <p className="text-slate-600 mb-12">
-            教育コストゼロ。退職リスクなし。必要な時だけ頼める。<br />
-            それが「オンライン秘書」のメリットです。
-          </p>
-
-          <div className="bg-white border-4 border-indigo-100 rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-orange-500 text-white font-bold px-6 py-2 rounded-bl-xl shadow-md">
-              まずはこれ！
-            </div>
-            <h3 className="text-2xl font-bold text-slate-800 mb-2">スポット依頼プラン</h3>
-            <p className="text-slate-500 text-sm mb-6">「ちょっとこれやって！」をチケット感覚で。</p>
-
-            <div className="flex items-end justify-center gap-2 mb-8">
-              <span className="text-5xl font-black text-indigo-600">¥1,000</span>
-              <span className="text-slate-500 font-bold mb-2">/ 1作業〜</span>
-            </div>
-
-            <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left max-w-sm mx-auto">
-              <p className="font-bold text-slate-900 mb-4 text-center">ご依頼サンプル</p>
-              <ul className="space-y-3 text-sm">
-                <li className="flex items-center text-slate-700">
-                  <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>HPのテキスト・画像修正</span>
-                </li>
-                <li className="flex items-center text-slate-700">
-                  <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>ショート動画 編集・投稿（1本）</span>
-                </li>
-                <li className="flex items-center text-slate-700">
-                  <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>保護者一斉メール配信代行</span>
-                </li>
-                <li className="flex items-center text-slate-700">
-                  <span className="text-green-500 mr-3 text-lg">✓</span>
-                  <span>オリジナルグッズ画像作成</span>
-                </li>
-              </ul>
-            </div>
-
-            <a
-              href="https://lin.ee/rCg1MJn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full py-4 bg-[#06C755] text-white font-bold rounded-xl text-lg hover:bg-[#05b34c] transition shadow-lg transform hover:-translate-y-1"
-            >
-              まずは無料で相談してみる
-            </a>
-            <p className="mt-4 text-xs text-slate-400">
-              ※月額の「事務局丸ごと代行プラン」もございます（要見積もり）
+      <section className="py-20 bg-white overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
+              パートさんを雇うより、<br className="sm:hidden" />圧倒的にお得です。
+            </h2>
+            <p className="text-slate-600 text-lg">
+              教育コストゼロ。退職リスクなし。必要な時だけ頼める。<br />
+              それが「オンライン秘書」のメリットです。
             </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* Manager Image Section */}
+            <div className="w-full lg:w-1/3 flex justify-center order-2 lg:order-1">
+              <div className="relative w-64 h-64 lg:w-full lg:h-auto aspect-[3/4]">
+                <div className="absolute inset-0 bg-orange-100 rounded-full blur-3xl opacity-50 transform translate-y-4"></div>
+                <Image
+                  src="/manager-hero.png"
+                  alt="部活DXマネージャー"
+                  fill
+                  className="object-contain drop-shadow-xl transform hover:scale-105 transition duration-500"
+                />
+                <div className="absolute -bottom-4 right-0 bg-white p-3 rounded-xl shadow-lg border-2 border-indigo-100 animate-bounce">
+                  <p className="text-sm font-bold text-indigo-900">「私がサポートします！」</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Pricing Card */}
+            <div className="w-full lg:w-2/3 order-1 lg:order-2">
+              <div className="bg-white border-4 border-indigo-100 rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-orange-500 text-white font-bold px-6 py-2 rounded-bl-xl shadow-md">
+                  まずはこれ！
+                </div>
+                <h3 className="text-2xl font-bold text-slate-800 mb-2">スポット依頼プラン</h3>
+                <p className="text-slate-500 text-sm mb-6">「ちょっとこれやって！」をチケット感覚で。</p>
+
+                <div className="flex items-end gap-2 mb-8">
+                  <span className="text-5xl font-black text-indigo-600">¥1,000</span>
+                  <span className="text-slate-500 font-bold mb-2">/ 1作業〜</span>
+                </div>
+
+                <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left">
+                  <p className="font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">ご依頼サンプル</p>
+                  <ul className="space-y-4 text-base">
+                    <li className="flex items-center text-slate-700">
+                      <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
+                      <span>ホームページのテキスト・画像修正</span>
+                    </li>
+                    <li className="flex items-center text-slate-700">
+                      <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
+                      <span>ショート動画 編集・投稿（1本）</span>
+                    </li>
+                    <li className="flex items-center text-slate-700">
+                      <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
+                      <span>保護者一斉メール配信代行</span>
+                    </li>
+                    <li className="flex items-center text-slate-700">
+                      <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
+                      <span>オリジナルグッズ画像作成</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <a
+                  href="https://lin.ee/rCg1MJn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-5 bg-[#06C755] text-white font-bold rounded-xl text-xl hover:bg-[#05b34c] transition shadow-lg transform hover:-translate-y-1 text-center"
+                >
+                  まずは無料で相談してみる
+                </a>
+                <p className="mt-4 text-center text-xs text-slate-400">
+                  ※月額の「事務局丸ごと代行プラン」もございます（要見積もり）
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
