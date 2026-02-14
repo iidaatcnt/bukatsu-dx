@@ -1,228 +1,218 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-800">
-      {/* Header / Navigation */}
-      <header className="fixed w-full bg-white/90 backdrop-blur-md border-b border-blue-100 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="font-bold text-xl text-blue-900 tracking-tight">
-            部活DX <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded ml-2 align-middle">Beta</span>
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
+      {/* Header */}
+      <header className="fixed w-full bg-white/95 backdrop-blur-sm border-b border-indigo-100 z-50 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between py-3">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">👩‍💼</span>
+            <div className="font-bold text-xl text-indigo-900 tracking-tight leading-none">
+              オンライン秘書<br /><span className="text-2xl text-indigo-600">部活DX</span>
+            </div>
           </div>
-          {/* Simple Header - No distractions */}
+          <a
+            href="https://lin.ee/rCg1MJn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center px-4 py-2 bg-[#06C755] text-white text-sm font-bold rounded-full hover:bg-[#05b34c] transition shadow-md"
+          >
+            LINEで相談する
+          </a>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
-            地域移行の波を、<br className="md:hidden" />
-            <span className="text-blue-600">ITでチャンスに変える。</span>
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            地域スポーツクラブ・文化活動団体の運営を、<br className="hidden md:inline" />
-            「集客・連絡・集金」のシステム化で劇的に効率化します。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://lin.ee/rCg1MJn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-[#06C755] rounded-lg shadow-lg hover:bg-[#05b34c] hover:shadow-xl transition-all transform hover:-translate-y-0.5"
-            >
-              LINEで無料相談する
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-            </a>
-          </div>
-        </div>
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-indigo-50 via-white to-blue-50 overflow-hidden relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-3/5 text-center lg:text-left">
+              <div className="inline-block px-4 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-bold mb-6 border border-orange-200 shadow-sm">
+                地域クラブ・NPO・部活動の先生へ
+              </div>
+              <h1 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
+                「先生、事務作業は<br className="hidden sm:inline" />
+                <span className="text-indigo-600 border-b-4 border-orange-300">私に任せてください！</span>」
+              </h1>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+                パソコンが苦手でも大丈夫。<br />
+                名簿作りも、お便り作成も、集金管理も...。<br />
+                面倒なことは全部、あなたの「オンラインマネージャー」が引き受けます。<br />
+                <span className="text-sm text-slate-500 mt-2 block">（スマホで写真を送るだけでOKです！）</span>
+              </p>
 
-        {/* Abstract Background Element */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full pointer-events-none">
-          <div className="absolute top-20 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-          <div className="absolute top-40 left-0 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a
+                  href="https://lin.ee/rCg1MJn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-[#06C755] text-white font-bold rounded-xl shadow-xl hover:bg-[#05b34c] hover:translate-y-[-2px] transition flex items-center justify-center text-lg w-full sm:w-auto"
+                >
+                  <span className="mr-2 text-2xl">📱</span> LINEでマネージャーに頼む
+                </a>
+              </div>
+              <p className="mt-4 text-sm text-slate-500">※相談は無料です。無理な勧誘はしませんのでご安心ください。</p>
+            </div>
+
+            <div className="lg:w-2/5 relative flex justify-center">
+              <div className="bg-white p-4 rounded-3xl shadow-2xl border-4 border-white transform rotate-2 relative z-10 max-w-sm w-full">
+                <div className="aspect-[3/4] bg-indigo-50 rounded-xl overflow-hidden relative mb-4">
+                  <Image
+                    src="/manager-hero.png"
+                    alt="頼れるメガネ女子マネージャー"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+                <div className="space-y-2 text-center">
+                  <p className="font-bold text-lg text-indigo-900">あなたの専属マネージャー</p>
+                  <div className="flex justify-center gap-2 text-xs font-bold text-white">
+                    <span className="bg-orange-400 px-2 py-1 rounded">PC作業</span>
+                    <span className="bg-blue-400 px-2 py-1 rounded">会計</span>
+                    <span className="bg-green-400 px-2 py-1 rounded">連絡</span>
+                  </div>
+                </div>
+              </div>
+              {/* Decor */}
+              <div className="absolute top-0 right-0 w-40 h-40 bg-yellow-200 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob"></div>
+              <div className="absolute bottom-0 left-0 w-40 h-40 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob animation-delay-2000"></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Problems Section */}
+      {/* Pain Points */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">OWNER'S PAIN</h2>
-            <h3 className="text-3xl font-bold text-slate-900">こんなお悩みありませんか？</h3>
-            <p className="mt-4 text-slate-600">アナログな管理が、あなたの指導時間を奪っています。</p>
-          </div>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-center text-3xl font-bold text-slate-900 mb-16">
+            <span className="bg-yellow-200 px-4 py-1">こんな「もったいない」状況</span><br />なっていませんか？
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
+              <div className="text-5xl mb-4">💻💦</div>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">PCが置物化している</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                助成金でパソコンを買ったけど、使い方がわからず箱に入ったまま。
+                結局、手書きの書類と電話連絡に戻ってしまっている。
+              </p>
+            </div>
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
+              <div className="text-5xl mb-4">😓</div>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">スタッフもIT苦手</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                パートさんや保護者ボランティアにお願いしたいけど、
+                みんなパソコンが苦手で、結局代表の自分が全部やるハメに...。
+              </p>
+            </div>
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
+              <div className="text-5xl mb-4">⏳</div>
+              <h3 className="text-xl font-bold text-slate-800 mb-3">指導時間が削られる</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                名簿整理やメール返信に追われて、肝心の指導メニューを考える時間がない。
+                「何のためにクラブを作ったんだっけ...」と悩む日々。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Menu */}
+      <section className="py-20 bg-indigo-900 text-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-indigo-300 font-bold tracking-widest uppercase mb-2">SERVICE MENU</h2>
+            <h3 className="text-3xl lg:text-4xl font-bold">私たちが「あなたの手」になります。</h3>
+            <p className="mt-4 text-indigo-200">専門的なスキルは不要。チャットで指示を飛ばすだけ。</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "集まらない", desc: "チラシや口コミだけでは限界。Webでどう発信すればいいか分からない。", icon: "📣" },
-              { title: "連絡が大変", desc: "LINEグループやメールでの連絡網。既読チェックや返信対応に追われる日々。", icon: "📩" },
-              { title: "集金が面倒", desc: "現金集金は管理が煩雑。未納催促のストレスから解放されたい。", icon: "💰" }
+              { title: "HP修正・更新", icon: "🛠️", desc: "「来月の予定を載せて」「写真を差し替えて」。スマホで指示するだけで、私たちが即座に更新します。" },
+              { title: "SNS運用代行", icon: "✨", desc: "活動の様子を写真で送ってください。魅力的な文章とハッシュタグを添えて、InstagramやFacebookに投稿します。" },
+              { title: "チラシ・ポスター作成", icon: "🎨", desc: "手書きのラフ案を写メで送るだけ。プロのデザインで見やすい募集チラシを作成し、データでお渡しします。" },
+              { title: "Square・決済導入", icon: "💳", desc: "「集金をカード払いにしたいけど設定が...」。面倒なアカウント開設から商品登録まで、全部代行します。" },
+              { title: "LINE公式アカウント", icon: "💬", desc: "保護者連絡用のLINE開設、リッチメニューの設定、一斉配信の代行まで。連絡網のストレスをゼロに。" },
+              { title: "Googleフォーム作成", icon: "📝", desc: "入会申込書やアンケートをデジタル化。自動集計されるので、もう紙の束をめくる必要はありません。" },
             ].map((item, i) => (
-              <div key={i} className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h4>
-                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+              <div key={i} className="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl hover:bg-white/20 transition">
+                <div className="text-3xl mb-4">{item.icon}</div>
+                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                <p className="text-sm text-indigo-100 leading-relaxed opacity-90">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Solution Section */}
-      <section className="py-20 bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-blue-300 uppercase tracking-widest mb-2">OUR SOLUTION</h2>
-            <h3 className="text-3xl font-bold">部活DXが提供する「3つの武器」</h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">📱</div>
-              <h4 className="text-xl font-bold mb-4">Instagram・SNS活用</h4>
-              <p className="text-blue-100 opacity-90">
-                保護者や生徒が見ているスマホへダイレクトにアプローチ。魅力的な発信で「入りたい」を作ります。
-              </p>
-            </div>
-            <div className="p-6">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">💻</div>
-              <h4 className="text-xl font-bold mb-4">公式ホームページ制作</h4>
-              <p className="text-blue-100 opacity-90">
-                クラブの「顔」となるWebサイト。活動方針や実績を掲載し、保護者に安心感を与えます。
-              </p>
-            </div>
-            <div className="p-6">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">🤖</div>
-              <h4 className="text-xl font-bold mb-4">事務作業の自動化</h4>
-              <p className="text-blue-100 opacity-90">
-                出欠確認やスケジュール管理をデジタル化。空いた時間で、より質の高い指導を実現します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Reason Section */}
-      <section id="reason" className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="md:w-1/2">
-              <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">WHY US</h2>
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">業界歴30年のエンジニアが<br />直接サポートします。</h3>
-              <p className="text-slate-600 mb-4 leading-relaxed">
-                Web制作会社やフリーランスの多くは「作って終わり」です。<br />
-                しかし、地域クラブに必要なのは、ITツールの導入から日々の運用まで相談できる「パートナー」です。
-              </p>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                私は30年間、エンジニアとして現場の問題解決に取り組んできました。
-                難しい専門用語は使いません。あなたのクラブの「事務員代行」として、IT周りを丸ごとお任せください。
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "直通連絡でスピーディーな対応",
-                  "地域活動への理解と共感",
-                  "無駄なコストを省いた適正価格"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center text-slate-700 font-medium">
-                    <span className="w-5 h-5 bg-green-500 rounded-full text-white flex items-center justify-center text-xs mr-3">✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="md:w-1/2 relative">
-              {/* Profile Image Placeholder */}
-              <div className="aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl relative">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-bold bg-white">
-                  {/* ここにプロフィール写真を入れます */}
-                  飯田 正勝<br />(Profile Image)
-                </div>
-              </div>
-              {/* Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-xl shadow-xl max-w-xs">
-                <p className="text-sm font-bold opacity-80 mb-1">PROVEN TRACK RECORD</p>
-                <p className="font-bold text-lg">「しろいプログラミング教室」など<br />教育・地域運営実績あり</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
+      {/* Pricing */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">PRICING</h2>
-            <h3 className="text-3xl font-bold text-slate-900">地域活動を応援する、<br />続けやすい料金プラン</h3>
-          </div>
-
-          <div className="max-w-lg mx-auto bg-white border-2 border-blue-100 rounded-3xl p-8 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-              おすすめ
-            </div>
-            <h4 className="text-xl font-bold text-slate-900 mb-2">Web制作・運用サポート</h4>
-            <div className="flex items-baseline mb-6">
-              <span className="text-4xl font-black text-blue-600">¥3,000</span>
-              <span className="text-slate-500 ml-2">/ 月〜</span>
-            </div>
-            <p className="text-slate-600 mb-8 text-sm">
-              ホームページの維持管理、SNS更新のアドバイス、ちょっとしたIT相談まで。
-              アルバイトを雇うよりも圧倒的に低コストで、専属のWeb担当者を持てます。
-            </p>
-            <a
-              href="https://lin.ee/rCg1MJn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full py-4 text-center font-bold text-white bg-[#06C755] rounded-xl hover:bg-[#05b34c] transition"
-            >
-              まずはLINEで相談する
-            </a>
-            <p className="text-center text-xs text-slate-400 mt-4">初期費用はご相談ください</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section id="contact" className="py-20 bg-slate-900 text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            あなたのクラブの「IT担当」になります。
-          </h2>
-          <p className="text-lg text-slate-300 mb-10">
-            まずは現状のお悩みをお聞かせください。無理な売り込みは一切いたしません。<br />
-            「どんなことができるの？」といった軽いご質問でも大歓迎です。
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">パートさんを雇うより、<br className="sm:hidden" />圧倒的にお得です。</h2>
+          <p className="text-slate-600 mb-12">
+            教育コストゼロ。退職リスクなし。必要な時だけ頼める。<br />
+            それが「オンライン秘書」のメリットです。
           </p>
 
-          <div className="flex flex-col items-center justify-center mb-8">
-            <div className="bg-white p-2 rounded-lg shadow-lg mb-4">
-              <img
-                src="https://qr-official.line.me/gs/M_095jzxmf_GW.png?oat_content=qr"
-                alt="LINE Official Account QR Code"
-                className="w-32 h-32 md:w-40 md:h-40"
-              />
+          <div className="bg-white border-4 border-indigo-100 rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-orange-500 text-white font-bold px-6 py-2 rounded-bl-xl shadow-md">
+              まずはこれ！
             </div>
-            <p className="text-slate-400 text-sm mb-4">QRコード読み取りはこちら</p>
-          </div>
+            <h3 className="text-2xl font-bold text-slate-800 mb-2">スポット依頼プラン</h3>
+            <p className="text-slate-500 text-sm mb-6">「ちょっとこれやって！」をチケット感覚で。</p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex items-end justify-center gap-2 mb-8">
+              <span className="text-5xl font-black text-indigo-600">¥1,000</span>
+              <span className="text-slate-500 font-bold mb-2">/ 1作業〜</span>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left max-w-sm mx-auto">
+              <p className="font-bold text-slate-900 mb-4 text-center">こんなことが頼めます</p>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-center text-slate-700">
+                  <span className="text-green-500 mr-3 text-lg">✓</span>
+                  <span>ホームページのテキスト・画像修正</span>
+                </li>
+                <li className="flex items-center text-slate-700">
+                  <span className="text-green-500 mr-3 text-lg">✓</span>
+                  <span>SNS投稿代行（1回分）</span>
+                </li>
+                <li className="flex items-center text-slate-700">
+                  <span className="text-green-500 mr-3 text-lg">✓</span>
+                  <span>保護者メールの一斉配信設定</span>
+                </li>
+                <li className="flex items-center text-slate-700">
+                  <span className="text-green-500 mr-3 text-lg">✓</span>
+                  <span>名簿データ入力（10名まで）</span>
+                </li>
+              </ul>
+            </div>
+
             <a
               href="https://lin.ee/rCg1MJn"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#06C755] hover:bg-[#05b34c] text-white font-bold rounded-lg text-lg flex items-center justify-center transition w-full sm:w-auto"
+              className="block w-full py-4 bg-[#06C755] text-white font-bold rounded-xl text-lg hover:bg-[#05b34c] transition shadow-lg transform hover:-translate-y-1"
             >
-              <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.92 2 10.75c0 2.87 1.57 5.43 4.09 7.04-.18.82-1.03 2.87-1.15 3.16-.06.14.07.29.2.22 3.13-1.63 4.14-2.19 4.39-2.34.8.21 1.64.33 2.47.33 5.52 0 10-3.92 10-8.75S17.52 2 12 2z" /></svg>
-              LINEで気軽に相談する
+              まずは無料で相談してみる
             </a>
+            <p className="mt-4 text-xs text-slate-400">
+              ※月額の「事務局丸ごと代行プラン」もございます（要見積もり）
+            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-950 text-slate-500 text-sm text-center border-t border-slate-900">
-        <p>© 2026 Bukatsu DX. All rights reserved.</p>
+      <footer className="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <div className="mb-4 text-4xl">👩‍💼</div>
+        <p className="font-bold text-white text-lg mb-2">オンライン秘書 部活DX</p>
+        <p>〒270-1432 千葉県白井市冨士137-88</p>
+        <p className="mt-8 text-xs opacity-50">© 2026 Bukatsu DX. All rights reserved.</p>
       </footer>
     </div>
   );
