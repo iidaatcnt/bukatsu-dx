@@ -121,54 +121,149 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Service Menu */}
+      {/* Service Menu (Solution) */}
       <section className="py-20 bg-indigo-900 text-white">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-indigo-300 font-bold tracking-widest uppercase mb-2">SERVICE MENU</h2>
-            <h3 className="text-3xl lg:text-4xl font-bold">「面倒なこと」は、すべて私たちが引き受けます。</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold">地域クラブ運営の「面倒くさい」<br />すべて私たちが解決します。</h3>
             <p className="mt-4 text-indigo-200 text-lg">あなたが「やりたいこと」だけを教えてください。</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "月謝袋の廃止・未払いゼロへ",
-                icon: "💳",
-                desc: "「月謝まだですか？」という気まずい催促はもう不要。自動引き落とし導入で、集金の手間も精神的ストレスもゼロにします。"
-              },
-              {
-                title: "電話連絡・欠席連絡からの解放",
-                icon: "💬",
-                desc: "朝の欠席連絡電話、もう出なくてOK。LINEで24時間自動受付。体験会の予約も顧客名簿も、スマホひとつで完結します。"
-              },
-              {
-                title: "TikTok / YouTube動画作成",
-                icon: "🎥",
-                desc: "練習風景の動画を送るだけ。流行りの音楽に乗せて、生徒が集まる「カッコいいショート動画」を作成・投稿代行します。"
-              },
-              {
-                title: "チーム公式グッズ販売",
-                icon: "👕",
-                desc: "「お揃いのチームTシャツを作りたい」。SUZURIなどを使って、在庫リスクゼロで公式グッズのネット販売を開始します。"
-              },
-              {
-                title: "チラシ・ポスター作成",
-                icon: "🎨",
-                desc: "手書きのラフ案を写メで送るだけ。プロのデザインで見やすく、生徒が集まる募集チラシを作成し、データでお渡しします。"
-              },
-              {
-                title: "HP修正・更新代行",
-                icon: "🛠️",
-                desc: "「来月の予定を載せて」「試合結果をアップして」。スマホで一行送るだけで、私たちが即座にホームページを更新します。"
-              },
-            ].map((item, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur border border-white/20 p-8 rounded-2xl hover:bg-white/20 transition flex flex-col justify-center">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h4 className="text-2xl font-bold mb-3 text-yellow-300">{item.title}</h4>
-                <p className="text-lg text-white font-medium leading-relaxed">{item.desc}</p>
+          {/* Main Feature: Money Collection */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl mb-12 transform hover:scale-[1.01] transition duration-500">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-1/2 relative bg-orange-50 min-h-[300px] lg:min-h-auto">
+                <Image
+                  src="/manager-money.png"
+                  alt="月謝管理"
+                  fill
+                  className="object-cover object-center"
+                />
+                <div className="absolute top-4 left-4 bg-orange-600 text-white font-bold px-4 py-1 rounded-full shadow-lg z-10">
+                  これが一番の目玉！
+                </div>
               </div>
-            ))}
+              <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+                <div className="text-5xl mb-4">💳</div>
+                <h3 className="text-3xl font-bold text-slate-900 mb-4">月謝袋の完全廃止</h3>
+                <h4 className="text-xl font-bold text-orange-600 mb-4">気まずい催促、もうしなくていいんです。</h4>
+                <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                  「〇〇くん、月謝まだかな？」<br />
+                  指導者と生徒・保護者の関係を悪くする「お金の催促」は、すべてオンラインマネージャーにお任せください。<br />
+                  自動引き落とし（サブスク）の導入で、集金の手間も精神的ストレスも、未払いリスクもゼロにします。
+                </p>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-sm font-bold">集金袋不要</span>
+                  <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-sm font-bold">自動引き落とし</span>
+                  <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-sm font-bold">未払い防止</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Secondary Features Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
+
+            {/* Contact Network */}
+            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
+              <div className="relative h-48 w-full bg-indigo-800/50">
+                <Image
+                  src="/manager-contact.png"
+                  alt="連絡網"
+                  fill
+                  className="object-cover object-top opacity-80 group-hover:opacity-100 transition"
+                />
+              </div>
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">電話連絡網を「秒殺」</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">
+                  LINE公式アカウント導入で、一斉送信ボタンを押すだけ。<br />
+                  「言った言わない」も既読確認で解決。画像や動画も送れるので、雨天中止の連絡も一瞬で終わります。
+                </p>
+              </div>
+            </div>
+
+            {/* Member List */}
+            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
+              <div className="relative h-48 w-full bg-indigo-800/50">
+                <Image
+                  src="/manager-list.png"
+                  alt="名簿管理"
+                  fill
+                  className="object-cover object-top opacity-80 group-hover:opacity-100 transition"
+                />
+              </div>
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">LINE友だち＝最強の名簿</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">
+                  紙の名簿はもう古い。LINEで友だち登録してもらえば、それがそのまま顧客名簿になります。<br />
+                  アンケート機能を使えば、保護者の連絡先や住所も自動でリスト化。Square決済との連携もスムーズです。
+                </p>
+              </div>
+            </div>
+
+            {/* Schedule */}
+            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
+              <div className="relative h-48 w-full bg-indigo-800/50">
+                <Image
+                  src="/manager-schedule.png"
+                  alt="予定表"
+                  fill
+                  className="object-cover object-top opacity-80 group-hover:opacity-100 transition"
+                />
+              </div>
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">「次の練習いつ？」が無くなる</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">
+                  毎月配るプリント、無くされますよね？<br />
+                  LINEのリッチメニューをタップするだけで、最新の予定表が表示されるように設定します。<br />
+                  変更があった場合も、通知でお知らせすればOK。
+                </p>
+              </div>
+            </div>
+
+            {/* Album (Option) */}
+            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
+              <div className="relative h-48 w-full bg-indigo-800/50">
+                <Image
+                  src="/manager-album.png"
+                  alt="アルバム"
+                  fill
+                  className="object-cover object-top opacity-80 group-hover:opacity-100 transition"
+                />
+                <div className="absolute top-2 right-2 bg-indigo-600 text-xs text-white px-2 py-1 rounded">オプション</div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">思い出を会員限定で共有</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">
+                  試合や合宿の写真を、保護者が見られる会員限定ページで公開。<br />
+                  子どもたちの輝く姿を届けることで、保護者の満足度が劇的にアップします。
+                </p>
+              </div>
+            </div>
+
+            {/* Support (Option) */}
+            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group md:col-span-2">
+              <div className="relative h-48 w-full bg-indigo-800/50">
+                <Image
+                  src="/manager-support.png"
+                  alt="問い合わせ対応"
+                  fill
+                  className="object-cover object-top opacity-80 group-hover:opacity-100 transition"
+                />
+                <div className="absolute top-2 right-2 bg-indigo-600 text-xs text-white px-2 py-1 rounded">オプション</div>
+              </div>
+              <div className="p-6">
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">体験予約もAIにお任せ</h4>
+                <p className="text-lg text-white font-medium leading-relaxed">
+                  「体験に行きたいんですけど...」という問い合わせ、電話で受けていませんか？<br />
+                  AIチャットボットが24時間自動で対応し、予約受付まで完了させます。<br />
+                  よくある質問（退会方法や持ち物など）も、自動返信で解決します。
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -226,15 +321,15 @@ export default function Home() {
                     </li>
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>ショート動画 編集・投稿（1本）</span>
+                      <span>SNS投稿代行（1記事作成・投稿）</span>
                     </li>
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>保護者一斉メール配信代行</span>
+                      <span>保護者一斉メール配信設定</span>
                     </li>
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>オリジナルグッズ画像作成</span>
+                      <span>公式LINEリッチメニュー画像作成</span>
                     </li>
                   </ul>
                 </div>
