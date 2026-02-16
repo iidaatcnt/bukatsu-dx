@@ -166,12 +166,12 @@ export default function Home() {
 
             {/* Contact Network */}
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
-              <div className="relative h-72 w-full bg-indigo-800/50">
+              <div className="relative h-72 w-full bg-slate-50">
                 <Image
                   src="/manager-contact.png"
                   alt="連絡網"
                   fill
-                  className="object-cover object-top opacity-90 group-hover:opacity-100 transition"
+                  className="object-contain p-2"
                 />
               </div>
               <div className="p-6">
@@ -185,12 +185,12 @@ export default function Home() {
 
             {/* Member List */}
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
-              <div className="relative h-72 w-full bg-indigo-800/50">
+              <div className="relative h-72 w-full bg-slate-50">
                 <Image
                   src="/manager-list.png"
                   alt="名簿管理"
                   fill
-                  className="object-cover object-top opacity-90 group-hover:opacity-100 transition"
+                  className="object-contain p-2"
                 />
               </div>
               <div className="p-6">
@@ -204,12 +204,12 @@ export default function Home() {
 
             {/* Schedule */}
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
-              <div className="relative h-72 w-full bg-indigo-800/50">
+              <div className="relative h-72 w-full bg-slate-50">
                 <Image
                   src="/manager-schedule.png"
                   alt="予定表"
                   fill
-                  className="object-cover object-top opacity-90 group-hover:opacity-100 transition"
+                  className="object-contain p-2"
                 />
               </div>
               <div className="p-6">
@@ -224,12 +224,12 @@ export default function Home() {
 
             {/* Album (Option) */}
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group">
-              <div className="relative h-72 w-full bg-indigo-800/50">
+              <div className="relative h-72 w-full bg-slate-50">
                 <Image
                   src="/manager-album.png"
                   alt="アルバム"
                   fill
-                  className="object-cover object-top opacity-90 group-hover:opacity-100 transition"
+                  className="object-contain p-2"
                 />
                 <div className="absolute top-2 right-2 bg-indigo-600 text-xs text-white px-2 py-1 rounded">オプション</div>
               </div>
@@ -244,12 +244,12 @@ export default function Home() {
 
             {/* Support (Option) */}
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl overflow-hidden hover:bg-white/20 transition group md:col-span-2">
-              <div className="relative h-80 w-full bg-indigo-800/50">
+              <div className="relative h-80 w-full bg-slate-50">
                 <Image
                   src="/manager-support.png"
                   alt="問い合わせ対応"
                   fill
-                  className="object-contain lg:object-cover object-top opacity-90 group-hover:opacity-100 transition"
+                  className="object-contain p-2"
                 />
                 <div className="absolute top-2 right-2 bg-indigo-600 text-xs text-white px-2 py-1 rounded">オプション</div>
               </div>
