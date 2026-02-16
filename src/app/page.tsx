@@ -40,8 +40,7 @@ export default function Home() {
               <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
                 パソコンが苦手でも大丈夫。<br />
                 名簿作りも、お便り作成も、集金管理も...。<br />
-                面倒なことは全部、あなたの「オンラインマネージャー」が引き受けます。<br />
-                <span className="text-sm text-slate-500 mt-2 block">（スマホで写真を送るだけでOKです！）</span>
+                面倒なことは全部、地域クラブのオンライン秘書「部活DX」が引き受けます。<br />
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -197,8 +196,8 @@ export default function Home() {
               <div className="p-6">
                 <h4 className="text-2xl font-bold mb-3 text-yellow-300">LINE友だち＝最強の名簿</h4>
                 <p className="text-lg text-white font-medium leading-relaxed">
-                  紙の名簿はもう古い。LINEで友だち登録してもらえば、それがそのまま顧客名簿になります。<br />
-                  アンケート機能を使えば、保護者の連絡先や住所も自動でリスト化。Square決済との連携もスムーズです。
+                  紙の名簿は不要です。LINEの友だちがそのまま顧客名簿になります。<br />
+                  保護者の連絡先や住所も顧客名簿にまとめます。
                 </p>
               </div>
             </div>
@@ -255,10 +254,10 @@ export default function Home() {
                 <div className="absolute top-2 right-2 bg-indigo-600 text-xs text-white px-2 py-1 rounded">オプション</div>
               </div>
               <div className="p-6">
-                <h4 className="text-2xl font-bold mb-3 text-yellow-300">体験予約もAIにお任せ</h4>
+                <h4 className="text-2xl font-bold mb-3 text-yellow-300">体験予約もお任せください</h4>
                 <p className="text-lg text-white font-medium leading-relaxed">
                   「体験に行きたいんですけど...」という問い合わせ、電話で受けていませんか？<br />
-                  AIチャットボットが24時間自動で対応し、予約受付まで完了させます。<br />
+                  24時間自動で対応し、予約受付まで完了させます。<br />
                   よくある質問（退会方法や持ち物など）も、自動返信で解決します。
                 </p>
               </div>
