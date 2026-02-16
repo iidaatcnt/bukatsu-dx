@@ -308,7 +308,7 @@ export default function Home() {
 
                 <div className="flex items-end gap-2 mb-8">
                   <span className="text-5xl font-black text-indigo-600">¥1,000</span>
-                  <span className="text-slate-500 font-bold mb-2">/ 1作業〜</span>
+                  <span className="text-slate-500 font-bold mb-2">（税別）/ 1作業</span>
                 </div>
 
                 <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left">
@@ -316,19 +316,15 @@ export default function Home() {
                   <ul className="space-y-4 text-base">
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>ホームページのテキスト・画像修正</span>
+                      <span>月謝袋の廃止（5名分設定）</span>
                     </li>
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>SNS投稿代行（1記事作成・投稿）</span>
+                      <span>既存HPのテキスト・画像修正（1箇所）</span>
                     </li>
                     <li className="flex items-center text-slate-700">
                       <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>保護者一斉メール配信設定</span>
-                    </li>
-                    <li className="flex items-center text-slate-700">
-                      <span className="text-green-500 mr-3 text-xl font-bold">✓</span>
-                      <span>公式LINEリッチメニュー画像作成</span>
+                      <span>公式LINEの作成代行</span>
                     </li>
                   </ul>
                 </div>
