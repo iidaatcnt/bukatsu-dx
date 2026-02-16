@@ -350,7 +350,7 @@ export default function Home() {
       <footer className="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
         <ClipboardCheck className="w-12 h-12 text-slate-500 mb-4 mx-auto" />
         <p className="font-bold text-white text-lg mb-2">地域クラブのオンライン秘書 部活DX</p>
-        <p>〒270-1432 千葉県白井市冨士137-88</p>
+        <p>〒103-0027 東京都中央区日本橋2丁目16-4 remix日本橋 6階</p>
         <p className="mt-8 text-xs opacity-50">© 2026 Bukatsu DX. All rights reserved.</p>
       </footer>
     </div>
