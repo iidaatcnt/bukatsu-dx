@@ -1,6 +1,6 @@
-
 import Image from "next/image";
 import Link from "next/link";
+import { ClipboardCheck, MonitorOff, UserX, Clock } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,9 +9,9 @@ export default function Home() {
       <header className="fixed w-full bg-white/95 backdrop-blur-sm border-b border-indigo-100 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between py-3">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">👩‍💼</span>
+            <ClipboardCheck className="w-8 h-8 text-indigo-600" />
             <div className="font-bold text-xl text-indigo-900 tracking-tight leading-none">
-              オンライン秘書<br /><span className="text-2xl text-indigo-600">部活DX</span>
+              地域クラブのオンライン秘書<br /><span className="text-2xl text-indigo-600">部活DX</span>
             </div>
           </div>
           <a
@@ -68,7 +68,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="space-y-2 text-center">
-                  <p className="font-bold text-lg text-indigo-900">あなたの専属マネージャー</p>
+                  <p className="font-bold text-lg text-indigo-900">地域クラブのオンライン秘書「部活DX」</p>
                   <div className="flex justify-center gap-2 text-xs font-bold text-white">
                     <span className="bg-orange-400 px-2 py-1 rounded">PC作業</span>
                     <span className="bg-blue-400 px-2 py-1 rounded">会計</span>
@@ -92,24 +92,24 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
-              <div className="text-5xl mb-4">💻💦</div>
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition group">
+              <MonitorOff className="w-20 h-20 text-slate-300 mb-6 mx-auto group-hover:text-indigo-500 transition-colors" />
               <h3 className="text-xl font-bold text-slate-800 mb-3">PCが置物化している</h3>
               <p className="text-slate-600 text-base leading-relaxed">
                 助成金でパソコンを買ったけど、使い方がわからず箱に入ったまま。
                 結局、手書きの書類と電話連絡に戻ってしまっている。
               </p>
             </div>
-            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
-              <div className="text-5xl mb-4">😓</div>
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition group">
+              <UserX className="w-20 h-20 text-slate-300 mb-6 mx-auto group-hover:text-indigo-500 transition-colors" />
               <h3 className="text-xl font-bold text-slate-800 mb-3">スタッフもIT苦手</h3>
               <p className="text-slate-600 text-base leading-relaxed">
                 パートさんや保護者ボランティアにお願いしたいけど、
                 みんなパソコンが苦手で、結局代表の自分が全部やるハメに...。
               </p>
             </div>
-            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition">
-              <div className="text-5xl mb-4">⏳</div>
+            <div className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-100 text-center hover:shadow-lg transition group">
+              <Clock className="w-20 h-20 text-slate-300 mb-6 mx-auto group-hover:text-indigo-500 transition-colors" />
               <h3 className="text-xl font-bold text-slate-800 mb-3">指導時間が削られる</h3>
               <p className="text-slate-600 text-base leading-relaxed">
                 名簿整理やメール返信に追われて、肝心の指導メニューを考える時間がない。
@@ -352,8 +352,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
-        <div className="mb-4 text-4xl">👩‍💼</div>
-        <p className="font-bold text-white text-lg mb-2">オンライン秘書 部活DX</p>
+        <ClipboardCheck className="w-12 h-12 text-slate-500 mb-4 mx-auto" />
+        <p className="font-bold text-white text-lg mb-2">地域クラブのオンライン秘書 部活DX</p>
         <p>〒270-1432 千葉県白井市冨士137-88</p>
         <p className="mt-8 text-xs opacity-50">© 2026 Bukatsu DX. All rights reserved.</p>
       </footer>
